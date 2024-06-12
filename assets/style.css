@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    font-size: large;
     background-color: #080;
     color: #000;
 }
@@ -38,9 +39,9 @@ nav ul li a {
 }
 
 .hero {
-    background-color: #004400;
+    background-color: #080;
     padding: 60px 0;
-    text-align: center;
+    text-align: justify;
 }
 
 .hero h2 {
@@ -54,7 +55,7 @@ nav ul li a {
 
 .content-section {
     padding: 40px 0;
-    text-align: center;
+    text-align: justify;
 }
 
 .content-section h2 {
