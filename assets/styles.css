@@ -16,8 +16,8 @@ body {
 
 /* Header Styles */
 header {
-    background: #333;
-    color: #fff;
+    background: #666633;
+    color: #009933;
     padding: 1rem 0;
 }
 
@@ -40,7 +40,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #006633;
     text-decoration: none;
     font-size: 1.2rem;
 }
