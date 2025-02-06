@@ -54,7 +54,7 @@ header nav ul li a:hover {
     background: #000000;
     color: #006600;
     padding: 2rem 0;
-    text-align: center;
+    text-align: justify;
 }
 
 .hero h2 {
@@ -75,14 +75,14 @@ section {
 }
 
 section h2 {
-    text-align: center;
+    text-align: justify;
     margin-bottom: 1rem;
     font-size: 1.8rem;
     color: #006600;
 }
 
 section p {
-    text-align: center;
+    text-align: justify;
 }
 
 section ul {
