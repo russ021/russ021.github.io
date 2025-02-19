@@ -108,7 +108,122 @@
 
             </div>
         </section>
-
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Git Guide Feb. 19, 2025</h2>
+                <p>Setup using:
+                    $ git config set --global user.name "Your Name"
+                    $ git config set --global user.email "your-email@example.com"</p>
+            
+                    
+                    <p>Basic Git Workflow:
+                    1. Clone a remote repo.
+                    2. Make some local changes.
+                    3. Add those changes.
+                    4. Commit changes.
+                    5. Pull then push to the remote.
+                    </p>
+                    
+                    <p>Origin is an alias for the remote repo. You can review your changes using
+                    $ git diff or $ git diff --staged. Use
+                    $ git restore or $ git restore --staged filename to restore a file.
+                    To view commit history use
+                    $ git log. The most recent is at the top of the list. HEAD is the default reference to the branch you're working on. When HEAD is no longer on the branch your working on it is known as detached. To reattach just use
+                    $ git switch branch name.</p>
+                    
+                    <p>If two or more people are committing to the same branch, eventually git pull is going to have to merge. To tell git pull to always merge divergent branches with
+                    $ git config set --global pull.rebase false. To make a new branch and switch to it
+                    $ git switch newbranch.</p>
+                    
+                    <p>Merging branches:
+                    $ git commit -m "finished"      // on topic branch
+                    $ git switch main
+                    $ git merge topic                     // merge topic into main
+                    $ git branch -d topic               // delete branch
+                    Force delete with -D in stead of -d "only if you know what your doing!"
+                    </p>
+                    
+                    <p>Delete all remote tracking branches with
+                    $ git fetch --prune
+                    or
+                    $ git fetch --prune someremote
+                    and even
+                    $ git fetch --prune --all
+                    to delete everything.
+                    </p>
+                    
+                    <p>There are four states files in git can be in:
+                    Untracked, Unmodified, Modified, and Staged. here are some ways to change the states a file is in.
+                    Untracked - git add foo.txt - Staged(as "new file")
+                    Modified - git add foo.txt - Staged
+                    Modified - git restore foo.txt - Unmodified
+                    Unmodified - edit foo.txt - Modified(with your favourite editor)
+                    Staged - git commit - Unmodified
+                    Staged - git restore --staged - Modified
+                    </p>
+                    
+                    <p>To find out the difference of modified file use:
+                    $ git diff filename
+                    diff rules:
+                    If a line is prefixed with -, it means this is how the line was in the old version.
+                    If a line is prefixed with +, It means this is how the line is in the new, modified version.
+                    If a line is not prefixed with anything, it means it is unchanged between the versions.
+                    If you just want a list of files that have changed, you can use the --name-only option.
+                    To see what the diff between fileone and filetwo are use
+                    $ git diff fileone...filetwo
+                    </p>
+                    
+                    <p></p>Never rebase anything that you have pushed unless you know what your doing. Run git rebase --continue until all commits have been rebased cleanly. You can use git stash if you want to return your working tree to the state of the last commit. Once your done and want to get back to were you left off use git stash pop. 
+                    $ git stash pushes the working tree on the stash stack.
+                    $ git stash drop deletes a particular stash stack entry.
+                    $ git stash list shows you the current stash stack.
+                    $ git stash drop deletes a particular stash stack entry.
+                    
+                    It is a good idea to keep in sync with the upstream repo. Once you have the upstream remote set up, you have to sync running git fetch upstream then merge or rebase. You can use git reflog to get back to a commit you deleted.
+                </p>
+                    <p>Some common variable settings:
+                        1.  user.name                          Your name
+                        2. user.email                         Your email
+                        3. pull.rebase                        set to true to try and rebase or false to try and merge
+                        4. core.editor                        default commit message editor
+                         
+                        5. merge.tool            default merge tool (ex. meld)
+                        6. diff.tool             default diff tool (ex. vimdiff)
+                        7. difftool.prompt       Set to false to not launch your diff tool
+                        8. color.ui              set to true for a colorful git output
+                    
+                    To edit the config file directly use
+                    $ git config edit or $ git config --global
+                    </p>
+                    
+                    <p>Creating aliases:
+                    $ git config set --global alias.logn 'log --name-only'
+                    Show all aliases 
+                    $ git aliases
+                    Change commit message
+                    $ git commit -m "the new message"
+                    </p>
+                    
+                    <p>Diff tools:
+                    using vimdiff you can keep the changes or discard them 
+                    :diffget LOCAL        keep changes
+                    :diffget REMOTE     discard changes
+                    
+                    To not backup the original file/files use
+                    $ git config --global set mergetool.keepBackup false
+                    </p>
+                    
+                    <p>Using a repo with submodules:
+                    To clone a repo and it's submodules use
+                    $ git clone --recurse-submodules "repo address"
+                    
+                    The above command is for when you clone a new repo. Use these commands after the fact.
+                    $ git clone "repo name"
+                    $ cd "example-submodule"
+                    $ git submodule update --recursive --init
+                    
+                    And there you have it, a git guide for new users. Thanks for reading and have a good day!</p>
+                    </div>
     </main>
 
     <footer>
