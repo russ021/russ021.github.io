@@ -235,7 +235,107 @@
                     <br>
                     And there you have it, a git guide for new users. Thanks for reading and have a good day!<br>
                 </p>
-                    </div>
+            <section id="home" class="hero">
+                <div class="container">
+                    <h2>Rust Data Types: April. 13, 2025</h2>
+                    <p><h1>Scalar Types</h1>
+                        Scalar types represent a single value.
+                        <h1>Integer Types</h1>
+                        Length | Signed | Unsigned<br>
+                        8-bit  | i8     | u8<br>
+                        16-bit | i16    | u16<br>
+                        32-bit | i32    | u32<br>
+                        64-bit | i64    | u64<br>
+                        128-bit| i128   | u128<br>
+                        arch   | isize  | usize<br>
+                        <br>
+                        Signed (i*): Can store negative and positive numbers.<br>
+                        <br>
+                        Unsigned (u*): Can store only positive numbers.<br>
+                        <br>
+                        Default: i32<br>
+                        <br>
+                        <h1>Floating-Point Types</h1>
+                        Type | Size   | Precision<br>
+                        f32  | 32-bit | Single<br>
+                        f64  | 64-bit | Double<br>
+                        <br>
+                        Default: f64<br>
+                        <br>
+                        <h1>Boolean Type</h1>
+                        bool: Can be either true or false.<br>
+                        <br>
+                        <h1>Character Type</h1>
+                        char: Represents a single Unicode scaler value (e.g., 'a', 'β', '😊').<br>
+                        <br>
+                        <h1>Compound Types</h1>
+                        Compound types can group multiple values into one type.<br>
+                        <h1>Tuple</h1>
+                        A tuple is a fixed-size collection of values of different types.<br>
+                        <br>
+                        Example: let tuple: (i32, f64, char) = (42, 3.14, 'a');<br>
+                        <br>
+                        <h1>Array</h1>
+                        An array is a fixed-size collection of values of the same type.<br>
+                        <br>
+                        Example: let array: [i32; 5] = [1, 2, 3, 4, 5];<br>
+                        <br>
+                        Fixed size: Must be known at compile time.<br>
+                        <br>
+                        <h1>Collections</h1>
+                        Vector(Vec<T>): A growable array type.<br>
+                        <br>
+                        Example: let vec: Vec<i32> = vec![1, 2, 3];<br>
+                        <br>
+                        <h1>String</h1>
+                        String: A growable UTF-8 string.<br>
+                        <br>
+                        Example: let = String::from("Hello");<br>
+                        <br>
+                        &str: String slice (borrowed reference).<br>
+                        <br>
+                        Example: let s: &str = "world";<br>
+                        <br>
+                        <h1>HashMap</h1>
+                        A key-value store.<br>
+                        <br>
+                        Example: let mut map: HashMap<String, i32> = HashMap::new();<br>
+                        map.insert(String::from("key"), 42);<br>
+                        <br>
+                        <h1>Special Types</h1>
+                        Option
+                        Represents an optional value.<br>
+                        <br>
+                        Example: let x: Option<i32> = Some(42);<br>
+                        let y: Option<i32> = None;<br>
+                        <br>
+                        Result<T, E>
+                            Used for error handling.<br>
+                            <br>
+                            Example: let result: Result<i32, String> = Ok(42);<br>
+                            let error: Result<i32, String> = Err(String::from("Error"));<br>
+                            <br>
+                            <h1>References and Ownership</h1>
+                            &T: Immutable reference.<br>
+                            &mut T: Mutable reference.<br>
+                            Box<T>: Heap allocation.<br>
+                            Example: let b: Box<i32> = Box::new(42);<br>
+                            <br>
+                            <h1>User-Defined Types</h1>
+                            Struct
+                            Example: struct Point { x: i32, y: i32 }<br>
+                            <br>
+                            Enum
+                            Example: enum Color { Red, Green, Blue }<br>
+                            <br>
+                            <h1>Conclusion</h1>
+                            Rust provides a rich set of data types to handle various programming needs.<br>
+                            Understanding these types is essential for effective Rust programming. This guide<br>
+                            covers the basics of scalar, compound, and special types, as well as user-defined<br>
+                            types like structs and enums. With this knowledge, you can start building robust and<br>
+                            efficient Rust applications.
+                    </p>
+                </div>
     </main>
 
     <footer>
