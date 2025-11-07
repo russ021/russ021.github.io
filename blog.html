@@ -34,30 +34,30 @@
                 <p>Linux is a powerful, secure, and customizable operating system that offers several advantages over
                     traditional operating systems like Windows and macOS:</p>
 
-                <p>Free and Open Source - Most Linux distros are completely free, with no hidden costs or licenses.<br>
+                <p>Free and Open Source - Most Linux distros are completely free, with no hidden costs or licenses.
                     Security and Privacy - Linux is less vulnerable to malware and offers better privacy controls.
                     Performance and Stability - Linux runs efficiently on both old and new hardware, making it a great choice for
-                    breathing new life into older computers.<br> 
+                    breathing new life into older computers.
                     Customization - From desktop environments to software choices, Linux allows
-                    users to tailor their experience.<br>
+                    users to tailor their experience.
                     Vast Community Support - With an active global community, help is always
                     available through forums, guides, and online resources.</p>
                 
                 <h1>What to Look for in a Beginner-Friendly Distro</h1>
                 <p>For new users, the best Linux distro should be:
 
-                    Easy to install - A simple installation process with graphical guidance.<br>
+                    Easy to install - A simple installation process with graphical guidance.
                     User-friendly interface - A desktop environment that resembles Windows or macOS for a smoother transition.
-                    Good hardware support - Works well out of the box with minimal driver installation.<br>
+                    Good hardware support - Works well out of the box with minimal driver installation.
                     Large software repository - Access to essential applications without complex commands.
                     Strong community support - Well-documented guides and active forums for troubleshooting.</p>
                 
                 <h1>Best Beginner-Friendly Linux Distros</h1>
-                <p>If you're new to Linux, here are some of the best beginner-friendly distros to consider:<br>
-                    <br>
-                    1. Ubuntu<br>
+                <p>If you're new to Linux, here are some of the best beginner-friendly distros to consider:
                     
-                    Why it's great for beginners:<br>
+                    1. Ubuntu
+                    
+                    Why it's great for beginners:
                     
                         One of the most popular Linux distributions.
                         Large community and extensive documentation.
@@ -65,8 +65,8 @@
                         Great support for hardware and software.
                     
                     Best for: General users, students, and those looking for a widely supported and easy-to-use OS.<br>
-                    <br>
-                    2. Linux Mint<br>
+                    
+                    2. Linux Mint
                     
                     Why it's great for beginners:
                     
@@ -75,8 +75,8 @@
                         Excellent hardware compatibility.
                         Multiple desktop environments to choose from (Cinnamon, MATE, Xfce).
                     
-                    Best for: Users switching from Windows who want familiarity and ease of use.</p><br>
-                <p>3. Pop!_OS<br>
+                    Best for: Users switching from Windows who want familiarity and ease of use.</p>
+                <p>3. Pop!_OS
 
                     Why it's great for beginners:
                     
@@ -85,9 +85,9 @@
                         Automatic driver installation for NVIDIA and AMD users.
                         Clean and modern desktop experience.
                     
-                    Best for: Gamers, content creators, and users with newer hardware.<br>
-                    <br>
-                    4. elementary OS<br>
+                    Best for: Gamers, content creators, and users with newer hardware.
+                    
+                    4. elementary OS
                     
                     Why it's great for beginners:
                     
@@ -96,12 +96,12 @@
                         Lightweight and smooth performance.
                         Privacy-focused and secure.
                     
-                    Best for: macOS users looking for a sleek, simple, and elegant Linux experience.</p><br>
+                    Best for: macOS users looking for a sleek, simple, and elegant Linux experience.</p>
                 <h1>Final Thoughts</h1>
 
                 <p>Switching to a beginner-friendly Linux distro is a great way to explore a free, open-source operating
                     system without unnecessary complexity. Whether you choose Ubuntu, Linux Mint, Pop!_OS, or
-                    elementary OS, each of these distros offers an easy and user-friendly experience for newcomers.<br>
+                    elementary OS, each of these distros offers an easy and user-friendly experience for newcomers.
                     
                     If you’re ready to make the switch, pick a distro, install it, and enjoy the freedom and flexibility
                     of Linux!</p>
@@ -111,6 +111,7 @@
         <section id="home" class="hero">
             <div class="container">
                 <h2>Git Guide Feb. 19, 2025</h2>
+<<<<<<< HEAD
                 <p>Setup using:
                     $ git config --global user.name "Your Name"<br>
                     $ git config --global user.email "your-email@example.com"<br>
@@ -123,41 +124,65 @@
                     3. Add those changes.<br>
                     4. Commit changes.<br>
                     5. Pull then push to the remote.<br>
+=======
+                <p><h1>Setup using:</h1>
+                    $ git config --global user.name "Your Name"
+                    $ git config --global user.email "your-email@example.com"
+                </p>
+            
+                    
+                    <p><h1>Basic Git Workflow:</h1>
+                    1. Clone a remote repo.
+                    2. Make some local changes.
+                    3. Add those changes.
+                    4. Commit changes.
+                    5. Pull then push to the remote.
+>>>>>>> bbfb547 (refactored blog)
                     </p>
                     
-                    <p>Origin is an alias for the remote repo. You can review your changes using<br>
-                    $ git diff or $ git diff --staged. Use<br>
-                    $ git restore or $ git restore --staged filename to restore a file.<br>
-                    To view commit history use<br>
-                    $ git log. The most recent is at the top of the list. HEAD is the default reference to the branch you're working on.<br>
-                    When HEAD is no longer on the branch your working on it is known as detached. To reattach just use<br>
-                    $ git switch branch name.<br>
+                    <p>Origin is an alias for the remote repo. You can review your changes using
+                    $ git diff or $ git diff --staged. Use
+                    $ git restore or $ git restore --staged filename to restore a file.
+                    To view commit history use
+                    $ git log. The most recent is at the top of the list. HEAD is the default reference to the branch you're working on.
+                    When HEAD is no longer on the branch your working on it is known as detached. To reattach just use
+                    $ git switch branch name.
                 </p>
                     
-                    <p>If two or more people are committing to the same branch, eventually git pull is going to have to merge.<br>
-                    To tell git pull to always merge divergent branches with<br>
+                    <p>If two or more people are committing to the same branch, eventually git pull is going to have to merge.
+                    To tell git pull to always merge divergent branches with
                     $ git config --global pull.rebase false.
-                    To make a new branch and switch to it<br>
-                    $ git switch newbranch.<br>
+                    To make a new branch and switch to it
+                    $ git switch newbranch.
                 </p>
                     
+<<<<<<< HEAD
                     <p>Merging branches:
                     $ git commit -m "finished"      // on topic branch<br>
                     $ git switch main<br>
                     $ git merge topic               // merge topic into main<br>
                     $ git branch -d topic           // delete branch<br>
                     Force delete with -D in stead of -d "only if you know what your doing!"<br>
+=======
+                    <p><h1>Merging branches:</h1>
+                    $ git commit -m "finished"      // on topic branch
+                    $ git switch main
+                    $ git merge topic               // merge topic into main
+                    $ git branch -d topic           // delete branch
+                    Force delete with -D in stead of -d "only if you know what your doing!"
+>>>>>>> bbfb547 (refactored blog)
                     </p>
                     
-                    <p>Delete all remote tracking branches with<br>
-                    $ git fetch --prune<br>
-                    or<br>
-                    $ git fetch --prune someremote<br>
-                    and even<br>
-                    $ git fetch --prune --all<br>
-                    to delete everything.<br>
+                    <p>Delete all remote tracking branches with
+                    $ git fetch --prune
+                    or
+                    $ git fetch --prune someremote
+                    and even
+                    $ git fetch --prune --all
+                    to delete everything.
                     </p>
                     
+<<<<<<< HEAD
                     <p>There are four states files in git can be in:
                     Untracked, Unmodified, Modified, and Staged. here are some ways to change the states a file is in.<br>
                     Untracked - git add foo.txt - Staged(as "new file")<br>
@@ -177,36 +202,66 @@
                     If you just want a list of files that have changed, you can use the --name-only option.<br>
                     To see what the diff between fileone and filetwo are use<br>
                     $ git diff fileone...filetwo<br>
+=======
+                    <p><h1>There are four states files in git can be in:</h1>
+                    Untracked, Unmodified, Modified, and Staged. here are some ways to change the states a file is in.
+                    Untracked - git add foo.txt - Staged(as "new file")
+                    Modified - git add foo.txt - Staged
+                    Modified - git restore foo.txt - Unmodified
+                    Unmodified - edit foo.txt - Modified(with your favourite editor)
+                    Staged - git commit - Unmodified
+                    Staged - git restore --staged - Modified
                     </p>
                     
-                <p>Never rebase anything that you have pushed unless you know what your doing. Run<br>
-                    $ git rebase --continue until all commits have been rebased cleanly. You can use git stash if you want to return your working tree<br>
-                    to the state of the last commit. Once your done and want to get back to were you left off use git stash pop.<br> 
-                    $ git stash pushes the working tree on the stash stack.<br>
-                    $ git stash drop deletes a particular stash stack entry.<br>
-                    $ git stash list shows you the current stash stack.<br>
-                    $ git stash drop deletes a particular stash stack entry.<br>
+                    <p><h1>To find out the difference of modified file use:</h1>
+                    $ git diff filename
+                    diff rules:
+                    If a line is prefixed with -, it means this is how the line was in the old version.
+                    If a line is prefixed with +, It means this is how the line is in the new, modified version.
+                    If a line is not prefixed with anything, it means it is unchanged between the versions.
+                    If you just want a list of files that have changed, you can use the --name-only option.
+                    To see what the diff between fileone and filetwo are use
+                    $ git diff fileone...filetwo
+>>>>>>> bbfb547 (refactored blog)
+                    </p>
                     
-                    It is a good idea to keep in sync with the upstream repo. Once you have the upstream remote set up, you have to sync running<br>
-                    $ git fetch upstream<br>
-                    then merge or rebase. You can use<br>
-                    $ git reflog to get back to a commit you deleted.<br>
+                <p>Never rebase anything that you have pushed unless you know what your doing. Run
+                    $ git rebase --continue until all commits have been rebased cleanly. You can use git stash if you want to return your working tree
+                    to the state of the last commit. Once your done and want to get back to were you left off use git stash pop.
+                    $ git stash pushes the working tree on the stash stack.
+                    $ git stash drop deletes a particular stash stack entry.
+                    $ git stash list shows you the current stash stack.
+                    $ git stash drop deletes a particular stash stack entry.
+                    
+                    It is a good idea to keep in sync with the upstream repo. Once you have the upstream remote set up, you have to sync running
+                    $ git fetch upstream
+                    then merge or rebase. You can use
+                    $ git reflog to get back to a commit you deleted.
                 </p>
+<<<<<<< HEAD
                     <p>Some common variable settings:
                         1.  user.name                         Your name<br>
                         2. user.email                         Your email<br>
                         3. pull.rebase                        set to true to try and rebase or false to try and merge<br>
                         4. core.editor                        default commit message editor<br>
+=======
+                    <p><h1>Some common variable settings:</h1>
+                        1.  user.name                         Your name
+                        2. user.email                         Your email
+                        3. pull.rebase                        set to true to try and rebase or false to try and merge
+                        4. core.editor                        default commit message editor
+>>>>>>> bbfb547 (refactored blog)
                         
-                        5. merge.tool            default merge tool (ex. meld)<br>
-                        6. diff.tool             default diff tool (ex. vimdiff)<br>
-                        7. difftool.prompt       Set to false to not launch your diff tool<br>
-                        8. color.ui              set to true for a colorful git output<br>
+                        5. merge.tool            default merge tool (ex. meld)
+                        6. diff.tool             default diff tool (ex. vimdiff)
+                        7. difftool.prompt       Set to false to not launch your diff tool
+                        8. color.ui              set to true for a colorful git output
                     
-                    To edit the config file directly use<br>
-                    $ git config edit or $ git config --global<br>
+                    To edit the config file directly use
+                    $ git config edit or $ git config --global
                     </p>
                     
+<<<<<<< HEAD
                     <p>Creating aliases:
                     $ git config set --global alias.logn 'log --name-only'<br>
                     Show all aliases<br> 
@@ -219,21 +274,41 @@
                     using vimdiff you can keep the changes or discard them<br> 
                     :diffget LOCAL        keep changes<br>
                     :diffget REMOTE     discard changes<br>
-                    
-                    To not backup the original file/files use<br>
-                    $ git config --global set mergetool.keepBackup false<br>
+=======
+                    <p><h1>Creating aliases:</h1>
+                    $ git config set --global alias.logn 'log --name-only'
+                    Show all aliases
+                    $ git aliases
+                    Change commit message
+                    $ git commit -m "the new message"
                     </p>
                     
+                    <p><h1>Diff tools:</h1>
+                    using vimdiff you can keep the changes or discard them 
+                    :diffget LOCAL        keep changes
+                    :diffget REMOTE     discard changes
+>>>>>>> bbfb547 (refactored blog)
+                    
+                    To not backup the original file/files use
+                    $ git config --global set mergetool.keepBackup false
+                    </p>
+                    
+<<<<<<< HEAD
                     <p>Using a repo with submodules:
                     To clone a repo and it's submodules use<br>
                     $ git clone --recurse-submodules "repo address"<br>
+=======
+                    <p><h1>Using a repo with submodules:</h1>
+                    To clone a repo and it's submodules use
+                    $ git clone --recurse-submodules "repo address"
+>>>>>>> bbfb547 (refactored blog)
                     
-                    The above command is for when you clone a new repo. Use these commands after the fact.<br>
-                    $ git clone "repo name"<br>
-                    $ cd "example-submodule"<br>
-                    $ git submodule update --recursive --init<br>
-                    <br>
-                    And there you have it, a git guide for new users. Thanks for reading and have a good day!<br>
+                    The above command is for when you clone a new repo. Use these commands after the fact.
+                    $ git clone "repo name"
+                    $ cd "example-submodule"
+                    $ git submodule update --recursive --init
+                    
+                    And there you have it, a git guide for new users. Thanks for reading and have a good day!
                 </p>
             <section id="home" class="hero">
                 <div class="container">
@@ -241,98 +316,98 @@
                     <p><h1>Scalar Types</h1>
                         Scalar types represent a single value.
                         <h1>Integer Types</h1>
-                        Length | Signed | Unsigned<br>
-                        8-bit  | i8     | u8<br>
-                        16-bit | i16    | u16<br>
-                        32-bit | i32    | u32<br>
-                        64-bit | i64    | u64<br>
-                        128-bit| i128   | u128<br>
-                        arch   | isize  | usize<br>
-                        <br>
-                        Signed (i*): Can store negative and positive numbers.<br>
-                        <br>
-                        Unsigned (u*): Can store only positive numbers.<br>
-                        <br>
-                        Default: i32<br>
-                        <br>
+                        Length | Signed | Unsigned
+                        8-bit  | i8     | u8
+                        16-bit | i16    | u16
+                        32-bit | i32    | u32
+                        64-bit | i64    | u64
+                        128-bit| i128   | u128
+                        arch   | isize  | usize
+                        
+                        Signed (i*): Can store negative and positive numbers.
+                        
+                        Unsigned (u*): Can store only positive numbers.
+                        
+                        Default: i32
+                        
                         <h1>Floating-Point Types</h1>
-                        Type | Size   | Precision<br>
-                        f32  | 32-bit | Single<br>
-                        f64  | 64-bit | Double<br>
-                        <br>
-                        Default: f64<br>
-                        <br>
+                        Type | Size   | Precision
+                        f32  | 32-bit | Single
+                        f64  | 64-bit | Double
+                        
+                        Default: f64
+                        
                         <h1>Boolean Type</h1>
-                        bool: Can be either true or false.<br>
-                        <br>
+                        bool: Can be either true or false.
+                        
                         <h1>Character Type</h1>
-                        char: Represents a single Unicode scaler value (e.g., 'a', 'β', '😊').<br>
-                        <br>
+                        char: Represents a single Unicode scaler value (e.g., 'a', 'β', '😊').
+                        
                         <h1>Compound Types</h1>
-                        Compound types can group multiple values into one type.<br>
+                        Compound types can group multiple values into one type.
                         <h1>Tuple</h1>
-                        A tuple is a fixed-size collection of values of different types.<br>
-                        <br>
-                        Example: let tuple: (i32, f64, char) = (42, 3.14, 'a');<br>
-                        <br>
+                        A tuple is a fixed-size collection of values of different types.
+                        
+                        Example: let tuple: (i32, f64, char) = (42, 3.14, 'a');
+                        
                         <h1>Array</h1>
-                        An array is a fixed-size collection of values of the same type.<br>
-                        <br>
-                        Example: let array: [i32; 5] = [1, 2, 3, 4, 5];<br>
-                        <br>
-                        Fixed size: Must be known at compile time.<br>
-                        <br>
+                        An array is a fixed-size collection of values of the same type.
+                        
+                        Example: let array: [i32; 5] = [1, 2, 3, 4, 5];
+                        
+                        Fixed size: Must be known at compile time.
+                        
                         <h1>Collections</h1>
-                        Vector(Vec<T>): A growable array type.<br>
-                        <br>
-                        Example: let vec: Vec<i32> = vec![1, 2, 3];<br>
-                        <br>
+                        Vector(Vec<T>): A growable array type.
+                        
+                        Example: let vec: Vec<i32> = vec![1, 2, 3];
+                        
                         <h1>String</h1>
-                        String: A growable UTF-8 string.<br>
-                        <br>
-                        Example: let = String::from("Hello");<br>
-                        <br>
-                        &str: String slice (borrowed reference).<br>
-                        <br>
-                        Example: let s: &str = "world";<br>
-                        <br>
+                        String: A growable UTF-8 string.
+                        
+                        Example: let = String::from("Hello");
+                        
+                        &str: String slice (borrowed reference).
+                        
+                        Example: let s: &str = "world";
+                        
                         <h1>HashMap</h1>
-                        A key-value store.<br>
-                        <br>
-                        Example: let mut map: HashMap<String, i32> = HashMap::new();<br>
-                        map.insert(String::from("key"), 42);<br>
-                        <br>
+                        A key-value store.
+                        
+                        Example: let mut map: HashMap<String, i32> = HashMap::new();
+                        map.insert(String::from("key"), 42);
+                        
                         <h1>Special Types</h1>
                         Option
-                        Represents an optional value.<br>
-                        <br>
-                        Example: let x: Option<i32> = Some(42);<br>
-                        let y: Option<i32> = None;<br>
-                        <br>
+                        Represents an optional value.
+                        
+                        Example: let x: Option<i32> = Some(42);
+                        let y: Option<i32> = None;
+                        
                         Result<T, E>
-                            Used for error handling.<br>
-                            <br>
-                            Example: let result: Result<i32, String> = Ok(42);<br>
-                            let error: Result<i32, String> = Err(String::from("Error"));<br>
-                            <br>
+                            Used for error handling.
+                            
+                            Example: let result: Result<i32, String> = Ok(42);
+                            let error: Result<i32, String> = Err(String::from("Error"));
+                            
                             <h1>References and Ownership</h1>
-                            &T: Immutable reference.<br>
-                            &mut T: Mutable reference.<br>
-                            Box<T>: Heap allocation.<br>
-                            Example: let b: Box<i32> = Box::new(42);<br>
-                            <br>
+                            &T: Immutable reference.
+                            &mut T: Mutable reference.
+                            Box<T>: Heap allocation.
+                            Example: let b: Box<i32> = Box::new(42);
+                            
                             <h1>User-Defined Types</h1>
                             Struct
-                            Example: struct Point { x: i32, y: i32 }<br>
-                            <br>
+                            Example: struct Point { x: i32, y: i32 }
+                            
                             Enum
-                            Example: enum Color { Red, Green, Blue }<br>
-                            <br>
+                            Example: enum Color { Red, Green, Blue }
+                            
                             <h1>Conclusion</h1>
-                            Rust provides a rich set of data types to handle various programming needs.<br>
-                            Understanding these types is essential for effective Rust programming. This guide<br>
-                            covers the basics of scalar, compound, and special types, as well as user-defined<br>
-                            types like structs and enums. With this knowledge, you can start building robust and<br>
+                            Rust provides a rich set of data types to handle various programming needs.
+                            Understanding these types is essential for effective Rust programming. This guide
+                            covers the basics of scalar, compound, and special types, as well as user-defined
+                            types like structs and enums. With this knowledge, you can start building robust and
                             efficient Rust applications.
                     </p>
                 </div>
