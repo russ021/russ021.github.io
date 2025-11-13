@@ -3,45 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Linux Blog</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <title>Minimalist Blog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>My Linux Blog</h1>
-            <nav>
+    <div class="container">
+        <header>
+            <h1>Minimalist Blog</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </header>
+
+        <div class="main-content">
+            <article>
+                <img src="https://via.placeholder.com/800x400" alt="Featured Image" class="featured-image">
+                <h2>Blog Post Title</h2>
+                <p class="meta">Posted on <time datetime="2025-11-08">November 8, 2025</time></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+            </article>
+
+            <section class="comments">
+                <h3>Comments</h3>
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <textarea placeholder="Your Comment"></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Categories</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Lifestyle</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h2>Welcome to My Linux Journey</h2>
-                <p>Sharing tips, tutorials, and insights about Linux and open-source software.</p>
             </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I'm a Linux enthusiast passionate about helping others explore the power of open-source software. <br>
-                    Join me as I share my experiences and learnings.</p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 My Linux Blog. All rights reserved.</p>
-        </div>
-    </footer>
+        </aside>
+    </div>
 </body>
 </html>
