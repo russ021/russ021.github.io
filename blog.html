@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Linux Blog</title>
     <link rel="stylesheet" href="assets/styles.css" />
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -13,7 +15,6 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +28,10 @@
             </header>
 
             <section>
-                <p>Making the switch to Linux can be both exciting and overwhelming, especially if you're coming from Windows or macOS. With so many distributions (distros) to choose from, picking the right one is crucial to ensuring a smooth and frustration-free experience. Below we cover why to switch, what to look for, and some beginner-friendly distros.</p>
+                <p>Making the switch to Linux can be both exciting and overwhelming, especially if you're coming from
+                    Windows or macOS. With so many distributions (distros) to choose from, picking the right one is
+                    crucial to ensuring a smooth and frustration-free experience. Below we cover why to switch, what to
+                    look for, and some beginner-friendly distros.</p>
 
                 <h3>Why Switch to Linux?</h3>
                 <ul>
@@ -50,7 +54,8 @@
                 <h3>Recommended Distros</h3>
                 <ol>
                     <li><strong>Ubuntu</strong> — popular, large community, GNOME desktop.</li>
-                    <li><strong>Linux Mint</strong> — Windows-like interface (Cinnamon), good out-of-the-box experience.</li>
+                    <li><strong>Linux Mint</strong> — Windows-like interface (Cinnamon), good out-of-the-box experience.
+                    </li>
                     <li><strong>Pop!_OS</strong> — System76 distro, great for gaming and modern hardware.</li>
                     <li><strong>elementary OS</strong> — macOS-like, minimal and privacy-focused.</li>
                 </ol>
@@ -79,14 +84,16 @@ $ git config --global user.email "your-email@example.com"</code></pre>
                 <h3>Common Commands & Notes</h3>
                 <ul>
                     <li>Review changes: <code>git diff</code> or <code>git diff --staged</code></li>
-                    <li>Restore file: <code>git restore &lt;file&gt;</code> or <code>git restore --staged &lt;file&gt;</code></li>
+                    <li>Restore file: <code>git restore &lt;file&gt;</code> or
+                        <code>git restore --staged &lt;file&gt;</code></li>
                     <li>View history: <code>git log</code></li>
                     <li>Switch branches: <code>git switch &lt;branch&gt;</code></li>
                     <li>Create and switch: <code>git switch -c &lt;newbranch&gt;</code></li>
                     <li>Delete local branch (safe): <code>git branch -d &lt;branch&gt;</code></li>
                     <li>Force-delete local branch: <code>git branch -D &lt;branch&gt;</code></li>
                     <li>Delete remote branch: <code>git push origin --delete &lt;branch&gt;</code></li>
-                    <li>Prune remote-tracking branches: <code>git fetch --prune</code> or <code>git fetch --prune --all</code></li>
+                    <li>Prune remote-tracking branches: <code>git fetch --prune</code> or
+                        <code>git fetch --prune --all</code></li>
                 </ul>
 
                 <h3>Merge Example</h3>
@@ -97,12 +104,14 @@ $ git merge topic
 $ git branch -d topic</code></pre>
 
                 <h3>States of Files</h3>
-                <p>Untracked, Unmodified, Modified, Staged — commands move files between these states (examples in the original guide).</p>
+                <p>Untracked, Unmodified, Modified, Staged — commands move files between these states (examples in the
+                    original guide).</p>
 
                 <h3>Stash, Rebase & Submodules</h3>
                 <ul>
                     <li>Stash: <code>git stash</code>, <code>git stash pop</code>, <code>git stash list</code></li>
-                    <li>Rebase: <code>git rebase --continue</code> (do not rebase published history unless you know what you're doing)</li>
+                    <li>Rebase: <code>git rebase --continue</code> (do not rebase published history unless you know what
+                        you're doing)</li>
                     <li>Submodules clone: <code>git clone --recurse-submodules &lt;repo&gt;</code></li>
                 </ul>
             </section>
@@ -125,7 +134,8 @@ $ git branch -d topic</code></pre>
 
                 <h3>Compound Types</h3>
                 <ul>
-                    <li>Tuple: fixed-size heterogeneous, e.g. <code>let t: (i32, f64, char) = (42, 3.14, 'a');</code></li>
+                    <li>Tuple: fixed-size heterogeneous, e.g. <code>let t: (i32, f64, char) = (42, 3.14, 'a');</code>
+                    </li>
                     <li>Array: fixed-size homogeneous, e.g. <code>let a: [i32; 5] = [1,2,3,4,5];</code></li>
                     <li>Vector: growable, e.g. <code>let v: Vec<i32> = vec![1,2,3];</code></li>
                     <li>Strings: <code>String</code> (growable) and <code>&amp;str</code> (slice)</li>
@@ -139,10 +149,12 @@ $ git branch -d topic</code></pre>
                 </ul>
 
                 <h3>Ownership & References</h3>
-                <p><code>&amp;T</code> (immutable reference), <code>&amp;mut T</code> (mutable), <code>Box&lt;T&gt;</code> (heap allocation).</p>
+                <p><code>&amp;T</code> (immutable reference), <code>&amp;mut T</code> (mutable),
+                    <code>Box&lt;T&gt;</code> (heap allocation).</p>
 
                 <h3>User-Defined Types</h3>
-                <p>Structs and enums, e.g. <code>struct Point { x: i32, y: i32 }</code>, <code>enum Color { Red, Green, Blue }</code>.</p>
+                <p>Structs and enums, e.g. <code>struct Point { x: i32, y: i32 }</code>,
+                    <code>enum Color { Red, Green, Blue }</code>.</p>
             </section>
         </article>
 
@@ -153,7 +165,9 @@ $ git branch -d topic</code></pre>
             </header>
 
             <section>
-                <p>"An algorithm is a finite set of unambiguous instructions that, given some set of initial conditions, can be performed in a prescribed sequence to achieve a certain goal and that has a recognizable set of end conditions."</p>
+                <p>"An algorithm is a finite set of unambiguous instructions that, given some set of initial conditions,
+                    can be performed in a prescribed sequence to achieve a certain goal and that has a recognizable set
+                    of end conditions."</p>
 
                 <h3>Complexity Analysis</h3>
                 <ul>
@@ -169,7 +183,8 @@ $ git branch -d topic</code></pre>
                     <li>Greedy algorithms</li>
                 </ul>
 
-                <p>Choosing the right algorithm and data structures (immutable vs mutable) impacts performance; Big O notation is used to compare algorithms.</p>
+                <p>Choosing the right algorithm and data structures (immutable vs mutable) impacts performance; Big O
+                    notation is used to compare algorithms.</p>
             </section>
         </article>
     </main>
@@ -180,4 +195,5 @@ $ git branch -d topic</code></pre>
         </div>
     </footer>
 </body>
+
 </html>
