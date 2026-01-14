@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #06660b;
+    --bg-color: #0000006b;
     --text-color: #e0e0e0;
     --text-muted: #a0a0a0;
     --primary-color: #06660b;
     /* Deep Purple */
-    --accent-color: #00e5ff;
+    --accent-color: #00ff15;
     /* Cyan */
     --glass-bg: rgba(30, 30, 35, 0.6);
     --glass-border: rgba(255, 255, 255, 0.08);
@@ -224,7 +224,7 @@ article p {
     display: block;
     padding: 8px 12px;
     border-radius: 6px;
-    background: rgba(37, 243, 18, 0.03);
+    background: rgba(36, 228, 19, 0.678);
     transition: background 0.3s ease, padding-left 0.3s ease;
     color: var(--text-color);
 }
