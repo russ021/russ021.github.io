@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <meta name="description" content="A personal blog about Linux, Open Source, and Tech.">
+    <title>Linux Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1><a href="index.html">Linux Blog</a></h1>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
+            <div class="header-content glass-card">
+                <h1><a href="index.html">Linux Blog</a></h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
             </div>
         </header>
 
         <div class="main-content">
-            <article>
+            <article class="glass-card">
                 <h2>The Freedom Within the Shell</h2>
                 <p class="meta">Posted on <time datetime="2025-11-08">January 11, 2025</time></p>
                 <p>Rob had always been fascinated by computers but felt limited by the opaque world of operating systems
@@ -54,7 +60,7 @@
                 </p>
             </article>
 
-            <section class="comments">
+            <section class="comments glass-card">
                 <h3>Comments</h3>
                 <form>
                     <input type="text" placeholder="Your Name">
@@ -65,7 +71,7 @@
         </div>
 
         <aside class="sidebar">
-            <div class="widget">
+            <div class="widget glass-card">
                 <h3>Recent Posts</h3>
                 <ul>
                     <li><a href="blog.html#distros">Beginner-Friendly Linux Distros</a></li>
