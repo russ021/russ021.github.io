@@ -11,7 +11,7 @@
     --font-body: 'Inter', sans-serif;
 }
 
-body {n
+body {
     font-family: var(--font-body);
     background-color: var(--bg-color);
     background-image: 
