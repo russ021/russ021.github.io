@@ -7,7 +7,8 @@
     <title>Linux Blog - All Posts</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css?v=1.0">
 </head>
 
@@ -15,7 +16,7 @@
     <div class="container">
         <header>
             <div class="header-content glass-card">
-                <h1><a href="index.html">Linux Blog</a></h1>
+                <h1><a href="index.html">My Learning Journal</a></h1>
             </div>
         </header>
 
@@ -27,9 +28,11 @@
                 </header>
 
                 <section>
-                    <p>Making the switch to Linux can be both exciting and overwhelming, especially if you're coming from
+                    <p>Making the switch to Linux can be both exciting and overwhelming, especially if you're coming
+                        from
                         Windows or macOS. With so many distributions (distros) to choose from, picking the right one is
-                        crucial to ensuring a smooth and frustration-free experience. Below we cover why to switch, what to
+                        crucial to ensuring a smooth and frustration-free experience. Below we cover why to switch, what
+                        to
                         look for, and some beginner-friendly distros.</p>
 
                     <h3>Why Switch to Linux?</h3>
@@ -53,7 +56,8 @@
                     <h3>Recommended Distros</h3>
                     <ol>
                         <li><strong>Ubuntu</strong> — popular, large community, GNOME desktop.</li>
-                        <li><strong>Linux Mint</strong> — Windows-like interface (Cinnamon), good out-of-the-box experience.
+                        <li><strong>Linux Mint</strong> — Windows-like interface (Cinnamon), good out-of-the-box
+                            experience.
                         </li>
                         <li><strong>Pop!_OS</strong> — System76 distro, great for gaming and modern hardware.</li>
                         <li><strong>elementary OS</strong> — macOS-like, minimal and privacy-focused.</li>
@@ -84,7 +88,8 @@ $ git config --global user.email "your-email@example.com"</code></pre>
                     <ul>
                         <li>Review changes: <code>git diff</code> or <code>git diff --staged</code></li>
                         <li>Restore file: <code>git restore &lt;file&gt;</code> or
-                            <code>git restore --staged &lt;file&gt;</code></li>
+                            <code>git restore --staged &lt;file&gt;</code>
+                        </li>
                         <li>View history: <code>git log</code></li>
                         <li>Switch branches: <code>git switch &lt;branch&gt;</code></li>
                         <li>Create and switch: <code>git switch -c &lt;newbranch&gt;</code></li>
@@ -92,7 +97,8 @@ $ git config --global user.email "your-email@example.com"</code></pre>
                         <li>Force-delete local branch: <code>git branch -D &lt;branch&gt;</code></li>
                         <li>Delete remote branch: <code>git push origin --delete &lt;branch&gt;</code></li>
                         <li>Prune remote-tracking branches: <code>git fetch --prune</code> or
-                            <code>git fetch --prune --all</code></li>
+                            <code>git fetch --prune --all</code>
+                        </li>
                     </ul>
 
                     <h3>Merge Example</h3>
@@ -103,13 +109,15 @@ $ git merge topic
 $ git branch -d topic</code></pre>
 
                     <h3>States of Files</h3>
-                    <p>Untracked, Unmodified, Modified, Staged — commands move files between these states (examples in the
+                    <p>Untracked, Unmodified, Modified, Staged — commands move files between these states (examples in
+                        the
                         original guide).</p>
 
                     <h3>Stash, Rebase & Submodules</h3>
                     <ul>
                         <li>Stash: <code>git stash</code>, <code>git stash pop</code>, <code>git stash list</code></li>
-                        <li>Rebase: <code>git rebase --continue</code> (do not rebase published history unless you know what
+                        <li>Rebase: <code>git rebase --continue</code> (do not rebase published history unless you know
+                            what
                             you're doing)</li>
                         <li>Submodules clone: <code>git clone --recurse-submodules &lt;repo&gt;</code></li>
                     </ul>
@@ -133,7 +141,8 @@ $ git branch -d topic</code></pre>
 
                     <h3>Compound Types</h3>
                     <ul>
-                        <li>Tuple: fixed-size heterogeneous, e.g. <code>let t: (i32, f64, char) = (42, 3.14, 'a');</code>
+                        <li>Tuple: fixed-size heterogeneous, e.g.
+                            <code>let t: (i32, f64, char) = (42, 3.14, 'a');</code>
                         </li>
                         <li>Array: fixed-size homogeneous, e.g. <code>let a: [i32; 5] = [1,2,3,4,5];</code></li>
                         <li>Vector: growable, e.g. <code>let v: Vec<i32> = vec![1,2,3];</code></li>
@@ -149,11 +158,13 @@ $ git branch -d topic</code></pre>
 
                     <h3>Ownership & References</h3>
                     <p><code>&amp;T</code> (immutable reference), <code>&amp;mut T</code> (mutable),
-                        <code>Box&lt;T&gt;</code> (heap allocation).</p>
+                        <code>Box&lt;T&gt;</code> (heap allocation).
+                    </p>
 
                     <h3>User-Defined Types</h3>
                     <p>Structs and enums, e.g. <code>struct Point { x: i32, y: i32 }</code>,
-                        <code>enum Color { Red, Green, Blue }</code>.</p>
+                        <code>enum Color { Red, Green, Blue }</code>.
+                    </p>
                 </section>
             </article>
 
@@ -164,8 +175,10 @@ $ git branch -d topic</code></pre>
                 </header>
 
                 <section>
-                    <p>"An algorithm is a finite set of unambiguous instructions that, given some set of initial conditions,
-                        can be performed in a prescribed sequence to achieve a certain goal and that has a recognizable set
+                    <p>"An algorithm is a finite set of unambiguous instructions that, given some set of initial
+                        conditions,
+                        can be performed in a prescribed sequence to achieve a certain goal and that has a recognizable
+                        set
                         of end conditions."</p>
 
                     <h3>Complexity Analysis</h3>
@@ -182,7 +195,8 @@ $ git branch -d topic</code></pre>
                         <li>Greedy algorithms</li>
                     </ul>
 
-                    <p>Choosing the right algorithm and data structures (immutable vs mutable) impacts performance; Big O
+                    <p>Choosing the right algorithm and data structures (immutable vs mutable) impacts performance; Big
+                        O
                         notation is used to compare algorithms.</p>
                 </section>
             </article>
@@ -192,8 +206,8 @@ $ git branch -d topic</code></pre>
             <div class="widget glass-card">
                 <h3><a href="index.html" style="color:var(--text-color);">Back to Home</a></h3>
             </div>
-            
-             <div class="widget glass-card">
+
+            <div class="widget glass-card">
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="#distros">Linux Distros</a></li>
@@ -205,7 +219,7 @@ $ git branch -d topic</code></pre>
             </div>
         </aside>
     </div>
-    
+
     <footer>
         <div class="container" style="justify-content:center; padding-bottom: 20px;">
             <p>&copy; 2025 My Linux Blog. All rights reserved.</p>
