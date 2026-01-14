@@ -2,8 +2,10 @@
     --bg-color: #0f0f13;
     --text-color: #e0e0e0;
     --text-muted: #a0a0a0;
-    --primary-color: #7c4dff; /* Deep Purple */
-    --accent-color: #00e5ff; /* Cyan */
+    --primary-color: #06660b;
+    /* Deep Purple */
+    --accent-color: #00e5ff;
+    /* Cyan */
     --glass-bg: rgba(30, 30, 35, 0.6);
     --glass-border: rgba(255, 255, 255, 0.08);
     --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -14,7 +16,7 @@
 body {
     font-family: var(--font-body);
     background-color: var(--bg-color);
-    background-image: 
+    background-image:
         radial-gradient(circle at 10% 20%, rgba(124, 77, 255, 0.15) 0%, transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.1) 0%, transparent 40%);
     color: var(--text-color);
@@ -24,7 +26,12 @@ body {
     min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     color: #ffffff;
     margin-top: 0;
@@ -38,7 +45,7 @@ a {
 
 a:hover {
     color: var(--primary-color);
-    text-shadow: 0 0 8px rgba(124, 77, 255, 0.4);
+    text-shadow: 0 0 8px rgba(10, 243, 22, 0.4);
 }
 
 .container {
@@ -191,7 +198,7 @@ article p {
 
 .comments button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(124, 77, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(35, 243, 8, 0.4);
 }
 
 /* Sidebar Widgets */
@@ -217,7 +224,7 @@ article p {
     display: block;
     padding: 8px 12px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(37, 243, 18, 0.03);
     transition: background 0.3s ease, padding-left 0.3s ease;
     color: var(--text-color);
 }
@@ -255,8 +262,10 @@ footer {
     .search-bar input:focus {
         width: 100%;
     }
-    
+
     article h2 {
         font-size: 1.8rem;
     }
 }
+
+<
