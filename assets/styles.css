@@ -117,6 +117,49 @@ header h1 a {
     box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
 }
 
+#search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+    overflow: hidden;
+}
+
+.search-result-item a {
+    display: block;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.2s ease;
+}
+
+.search-result-item:last-child a {
+    border-bottom: none;
+}
+
+.search-result-item a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.search-result-item h4 {
+    margin: 0 0 4px 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.search-result-item small {
+    color: var(--text-muted);
+}
+
 /* Main Layout */
 .main-content {
     flex: 3;
