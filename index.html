@@ -75,9 +75,10 @@
 
             <section class="comments glass-card">
                 <h3>Comments</h3>
-                <form>
-                    <input type="text" placeholder="Your Name">
-                    <textarea placeholder="Your Comment"></textarea>
+                <div id="comments-container"></div>
+                <form id="comment-form">
+                    <input type="text" id="comment-name" placeholder="Your Name" required>
+                    <textarea id="comment-text" placeholder="Your Comment" required></textarea>
                     <button type="submit">Post Comment</button>
                 </form>
             </section>
@@ -95,6 +96,7 @@
             </div>
         </aside>
     </div>
+    <script src="assets/comments.js"></script>
     <script src="assets/search.js"></script>
 </body>
 
