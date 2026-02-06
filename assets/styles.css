@@ -85,6 +85,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
+    position: relative; /* Ensure stacking context */
+    z-index: 500; /* Keep header above content */
 }
 
 header h1 {
