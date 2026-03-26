@@ -204,7 +204,57 @@ $ git branch -d topic</code></pre>
                         notation is used to compare algorithms.</p>
                 </section>
             </article>
-        </div>
+
+            <div id="Deciphering-the-TCP/IP-Suite"></div>
+            <article class="glass-card">
+                <header>
+                    <h2>Deciphering the TCP/IP Suite</h2>
+                    <p class="meta"><small>Mar 26, 2026</small></p>
+                </header>
+
+                <p>Understanding how data travels across the internet can often feel like looking into a black box. However,
+                    the **TCP/IP (Transmission Control Protocol/Internet Protocol)** suite provides the fundamental map for
+                    how these connections happen. By breaking down the core components—from low-level protocols like PPP to
+                    high-level port management—we can demystify the mechanics of our digital lives.
+                </p>
+                <h1>The Foundation: What is a Protocol?</h1>
+                <p>At its simplest, a network protocol is a set of rules that governs how data is exchanged between devices.
+                    Without these rules, a computer wouldn't know how to interpret the electrical or optical signals it receives
+                    from another machine.
+                </p>
+                <h1>Diving into the Data Link: Point-to-Point Protocol (IPCP/PPP)</h1>
+                <p>One of the most essential protocols for establishing a direct connection between two nodes is the
+                    **Point-to-Point Protocol (PPP)**. It manages several critical phases of a connection:
+                        - **LCP (Link Control Protocol):** Responsible for establishing, configuring, and testing the data-link
+                        connection. It ensures both ends of the "pipe" are compatible before data flows.
+                        - **Authentication (PAP vs. CHAP):** Security is built into the connection process. While **PAP**
+                        (Password Authentication Protocol) sends credentials in plain text, **CHAP** (Challenge Handshake
+                        Authentication Protocol) is more secure, using a 3-way handshake to verify identity without ever
+                        sending the password over the link.
+                        - **CCP (Compression Control Protocol):** To make the most of available bandwidth, CCP manages the
+                        compression of data as it moves through the PPP link.</p>
+                    <h1>Navigating the Network: Gateways and Ports</h1>
+                    <p>Once a connection is established, data needs to find its way to the correct destination. This is where
+                        **gateways** and **ports** come into play. A gateway acts as a "traffic cop," directing data between
+                        different networks, while ports serve as communication endpoints for specific services (e.g., HTTP on
+                        port 80, HTTPS on port 443). Understanding how these components work together helps us grasp how our
+                        requests to websites and online services are routed across the globe.</p>
+                    <h1>Efficiency vs. Reliability: UDP vs. TCP in VPNs</h1>
+                    <p>A common question in networking is why many VPNs (Virtual Private Networks) prefer **UDP** (User
+                        Datagram Protocol) over **TCP**. While TCP is known for its reliability—it checks to make sure every
+                        single packet arrives in the correct order—this "checking" process adds overhead and latency.
+                        **UDP**, on the other hand, is "connectionless." It sends data as fast as possible without waiting for
+                        acknowledgments. In a VPN tunnel, using UDP often results in much higher speeds because it avoids the
+                        "TCP-over-TCP" meltdown, where two different protocols are both trying to manage error correction
+                        simultaneously.</p>
+                    <h1>Summary</h1>
+                    <p>From the initial handshake of an LCP packet to the high-speed routing of UDP traffic through a VPN, the
+                        TCP/IP suite is a marvel of layered engineering. Whether you are troubleshooting a gateway in Linux or
+                        configuring a secure server, understanding these building blocks is the first step toward mastering the
+                        network.</p>
+                    </article>
+                    </div>
+
 
         <aside class="sidebar">
             <div class="widget glass-card">
@@ -218,11 +268,13 @@ $ git branch -d topic</code></pre>
                     <li><a href="#git-guide">Git Guide</a></li>
                     <li><a href="#rust">Rust Data Types</a></li>
                     <li><a href="#algorithms">Algorithms</a></li>
-                    <li><a href="#last-rust-project">Last Rust Project</a></li>
+                    <li><a href="#Deciphering-the-TCP/IP-Suite">Deciphering the TCP/IP Suite</a></li>
                 </ul>
             </div>
         </aside>
     </div>
+
+</div>
 
     <footer>
         <div class="container" style="justify-content:center; padding-bottom: 20px;">
