@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Algorithms",
             url: "blog.html#algorithms",
             date: "Jun 26, 2025"
+        },
+        {
+            title: "Deciphering the TCP/IP Stack",
+            url: "blog.html#tcp-ip",
+            date: "March 26, 2026"
         }
     ];
 
