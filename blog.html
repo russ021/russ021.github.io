@@ -217,12 +217,12 @@ $ git branch -d topic</code></pre>
                     how these connections happen. By breaking down the core components—from low-level protocols like PPP to
                     high-level port management—we can demystify the mechanics of our digital lives.
                 </p>
-                <h1>The Foundation: What is a Protocol?</h1>
+                <h3>The Foundation: What is a Protocol?</h3>
                 <p>At its simplest, a network protocol is a set of rules that governs how data is exchanged between devices.
                     Without these rules, a computer wouldn't know how to interpret the electrical or optical signals it receives
                     from another machine.
                 </p>
-                <h1>Diving into the Data Link: Point-to-Point Protocol (IPCP/PPP)</h1>
+                <h3>Diving into the Data Link: Point-to-Point Protocol (IPCP/PPP)</h3>
                 <p>One of the most essential protocols for establishing a direct connection between two nodes is the
                     **Point-to-Point Protocol (PPP)**. It manages several critical phases of a connection:
                         - **LCP (Link Control Protocol):** Responsible for establishing, configuring, and testing the data-link
@@ -233,13 +233,13 @@ $ git branch -d topic</code></pre>
                         sending the password over the link.
                         - **CCP (Compression Control Protocol):** To make the most of available bandwidth, CCP manages the
                         compression of data as it moves through the PPP link.</p>
-                    <h1>Navigating the Network: Gateways and Ports</h1>
+                    <h3>Navigating the Network: Gateways and Ports</h3>
                     <p>Once a connection is established, data needs to find its way to the correct destination. This is where
                         **gateways** and **ports** come into play. A gateway acts as a "traffic cop," directing data between
                         different networks, while ports serve as communication endpoints for specific services (e.g., HTTP on
                         port 80, HTTPS on port 443). Understanding how these components work together helps us grasp how our
                         requests to websites and online services are routed across the globe.</p>
-                    <h1>Efficiency vs. Reliability: UDP vs. TCP in VPNs</h1>
+                    <h3>Efficiency vs. Reliability: UDP vs. TCP in VPNs</h3>
                     <p>A common question in networking is why many VPNs (Virtual Private Networks) prefer **UDP** (User
                         Datagram Protocol) over **TCP**. While TCP is known for its reliability—it checks to make sure every
                         single packet arrives in the correct order—this "checking" process adds overhead and latency.
