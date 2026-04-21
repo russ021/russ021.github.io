@@ -1,11 +1,11 @@
 # russ021.github.io
-🐧 Learning Journey: The Freedom Within the Shell
+Learning Journey: The Freedom Within the Shell
 
 Welcome to the repository for Learning Journey, a personal technical blog documenting the transition from proprietary software to the open-source world of Linux. This site serves as a digital garden for tutorials, system administration tips, and insights into software development.
-📝 About the Project
+About the Project
 
 This site chronicles the evolution of a hobbyist into a power user. It focuses on the philosophy of software freedom, the efficiency of the command line, and the practical application of Linux in a modern development workflow.
-🚀 Featured Content
+Featured Content
 
 The blog covers a wide range of technical topics, including:
 
@@ -17,7 +17,7 @@ The blog covers a wide range of technical topics, including:
 
     Hardware: Setting up lightweight servers and hosting on Raspberry Pi.
 
-📂 Recent Posts
+Recent Posts
 
     Beginner-Friendly Linux Distros: Finding the right entry point for your journey.
 
@@ -27,7 +27,7 @@ The blog covers a wide range of technical topics, including:
 
     TCP/IP Suite: Deep dives into networking protocols.
 
-🛠️ Technology Stack
+Technology Stack
 
     OS: Hosted on a lightweight Linux server.
 
@@ -35,7 +35,7 @@ The blog covers a wide range of technical topics, including:
 
     Environment: Optimized for performance and minimalism (no bloatware).
 
-🤝 Community & Contribution
+Community & Contribution
 
 As Rob discovered, the Linux community is the backbone of technical growth.
 
